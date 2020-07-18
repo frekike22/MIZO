@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MIZO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet"  type="text/css" title="normal" href="default.css" >
+<link rel="stylesheet"  type="text/css" title="disabled"href="disabled.css" >
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+var style_cookie_name = "style" ;
+var style_cookie_duration = 30 ;
+var style_domain = "thesitewizard.com" ;
+
+// *** END OF CUSTOMISABLE SECTION ***
+// You do not need to customise anything below this line
+
+function switch_style ( css_title )
+{
+// You may use this script on your site free of charge provided
+// you do not remove this notice or the URL below. Script from
+// https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+  var i, link_tag ;
+  for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+      link_tag[i].title) {
+      link_tag[i].disabled = true ;
+      if (link_tag[i].title == css_title) {
+        link_tag[i].disabled = false ;
+      }
+    }
+    set_cookie( style_cookie_name, css_title,
+      style_cookie_duration, style_domain );
+  }
+}
+function set_style_from_cookie()
+{
+  var css_title = get_cookie( style_cookie_name );
+  if (css_title.length) {
+    switch_style( css_title );
+  }
+}
+function set_cookie ( cookie_name, cookie_value,
+    lifespan_in_days, valid_domain )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var domain_string = valid_domain ?
+                       ("; domain=" + valid_domain) : '' ;
+    document.cookie = cookie_name +
+                       "=" + encodeURIComponent( cookie_value ) +
+                       "; max-age=" + 60 * 60 *
+                       24 * lifespan_in_days +
+                       "; path=/" + domain_string ;
+}
+function get_cookie ( cookie_name )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+	var cookie_string = document.cookie ;
+	if (cookie_string.length != 0) {
+		var cookie_array = cookie_string.split( '; ' );
+		for (i = 0 ; i < cookie_array.length ; i++) {
+			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+			if (cookie_value != null) {
+				return decodeURIComponent ( cookie_value[1] ) ;
+			}
+		}
+	}
+	return '' ;
+}
+</script>
+</head>
+<body margin="15px">
+
+
+<header class="bgimg">
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">MIZO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="discography.html">DISCOGRAPHY</a>
+      <a class="nav-item nav-link" href="top10.html">TOP 10</a>
+	  <a class="nav-item nav-link" href="askmizo.html">ASK MIZO</a>
+	  <a class="nav-item nav-link" href="alternative.html">MIZO'S ALTERNATIVE REALITY</a>
+    </div>
+  </div>
+</nav>
+
+<button type="button" onclick="switch_style('normal');return false;" name="theme" value="Normal theme" id="normal">Normal</button>
+<button type="button" onclick="switch_style('disabled');return false;" name="theme" value="Disabled Theme" id="disabled">Disabled</button>
+
+
+<h1>Mizo's alternative reality</h1>
+<section>
+<p>if you’ve been following Eatbrain’s gritty fury over the last 18 months you’ll already be well acquainted with Mizo. Hailing from Nizhny Novgorod, the young talent first appeared on the label with the Coppa fronted Soul Reaper EP in 2017 and has just followed it up with another five track sweltering firefest entitled Dust Devil.</p>
+<p>Ranging from skin scorching full throttle turbine bass of Double Rush to the swampier, paranoid Virus like rolls of Contactless, it’s the most comprehensive picture of his skills and sounds so far. It also comes with the announcement of My Alternative Reality, a new character concept in which he reveals his alter ego, a masked inner beast who can control you with his music…</p>
+<p>At time of writing, he’s currently controlling the Beatport D&B top 10 at an impressive number three and he’s also been at the controls for the recent Eatbrain podcast. An hour of dynamic D&B horsepower that flips between shades with style, it’s highly recommended.</p>
+<p>We called him up to ask what the (dust) devil is going on… </p>
+</section>
+<article>
+
+<h2>Tell us about this alternative reality concept you launched just before the Dust Devil release. Interesting head gear….</h2>
+<p>Yes thank you. It’s something new and exciting that I have never done before. I wanted to add some type of visual angle to what I’m doing. You release only tracks sometimes it can be a little straight forward so I wanted to enhance the visual aspect. It’s been interesting.</p>
+</article>
+
+<aside>
+<h3>Adding a story and concept gives life to the music, I think it helps its longevity a little. Not so disposable…</h3>
+<p>I hope so. Some people have thought that I will be wearing the mask for performance but it’s only for the videos. It’s just for the story you know what I mean?</p>
+</aside>
+
+<figure>
+<a><img height="250px" width="400px" src="alternative.png" alt="Mask"  ></img></a>
+</figure>
+
+<article>
+
+<h4>So what inspired the concept?</h4>
+<p>It’s funny. Whenever people ask me what is Miso I can’t say because it’s just my name. There is no funny or interesting story. So I created one about an alternative ego that’s inside me. Like some musician ego that can control your mind with music.</p>
+
+</article>
+
+
+<video width="75%" height="75%" poster="alternative.png" controls>
+  <source src="my_alternative_reality.mp4" type="video/mp4" >
+  
+  Your browser does not support the video tag.
+</video>
+
+<article>
+
+<h3>Ha. How will the story continue?</h3>
+<p>Yes we have more ideas but one thing is important for me; it has to be quality. It can’t be disposable or shitty. There’s too much of that around. It makes it harder when you set the benchmark that high but…</p>
+
+</article>
+
+
+
+
+
+
+
+<footer class="light">
+
+<p class="links">
+<br>
+<i class="fa fa-facebook-square"></i> 
+<a href="https://www.facebook.com/mizodnb/" target="_blank" > https://www.facebook.com/mizodnb/</a> 
+<br>
+
+
+
+<i class="fa fa-instagram"></i> 
+<a href="https://www.instagram.com/alex_mizo/" target="_blank" > https://www.instagram.com/alex_mizo/</a> 
+
+</p>
+
+ </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MIZO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet"  type="text/css" title="normal" href="default.css" >
+<link rel="stylesheet"  type="text/css" title="disabled" href="disabled.css" >
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+var style_cookie_name = "style" ;
+var style_cookie_duration = 30 ;
+var style_domain = "thesitewizard.com" ;
+
+// *** END OF CUSTOMISABLE SECTION ***
+// You do not need to customise anything below this line
+
+function switch_style ( css_title )
+{
+// You may use this script on your site free of charge provided
+// you do not remove this notice or the URL below. Script from
+// https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+  var i, link_tag ;
+  for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+      link_tag[i].title) {
+      link_tag[i].disabled = true ;
+      if (link_tag[i].title == css_title) {
+        link_tag[i].disabled = false ;
+      }
+    }
+    set_cookie( style_cookie_name, css_title,
+      style_cookie_duration, style_domain );
+  }
+}
+function set_style_from_cookie()
+{
+  var css_title = get_cookie( style_cookie_name );
+  if (css_title.length) {
+    switch_style( css_title );
+  }
+}
+function set_cookie ( cookie_name, cookie_value,
+    lifespan_in_days, valid_domain )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var domain_string = valid_domain ?
+                       ("; domain=" + valid_domain) : '' ;
+    document.cookie = cookie_name +
+                       "=" + encodeURIComponent( cookie_value ) +
+                       "; max-age=" + 60 * 60 *
+                       24 * lifespan_in_days +
+                       "; path=/" + domain_string ;
+}
+function get_cookie ( cookie_name )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+	var cookie_string = document.cookie ;
+	if (cookie_string.length != 0) {
+		var cookie_array = cookie_string.split( '; ' );
+		for (i = 0 ; i < cookie_array.length ; i++) {
+			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+			if (cookie_value != null) {
+				return decodeURIComponent ( cookie_value[1] ) ;
+			}
+		}
+	}
+	return '' ;
+}
+</script>
+</head>
+<body>
+
+<header class="bgimg">
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">MIZO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="discography.html">DISCOGRAPHY</a>
+      <a class="nav-item nav-link" href="top10.html">TOP 10</a>
+	  <a class="nav-item nav-link" href="askmizo.html">ASK MIZO</a>
+	  <a class="nav-item nav-link" href="alternative.html">MIZO'S ALTERNATIVE REALITY</a>
+    </div>
+  </div>
+</nav>
+
+<button type="button" onclick="switch_style('normal');return false;" name="theme" value="Normal theme" id="normal">Normal</button>
+<button type="button" onclick="switch_style('disabled');return false;" name="theme" value="Disabled Theme" id="disabled">Disabled</button>
+
+
+<div class="row">
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<p class="text">Alexey Maslyukov (Mizo), coming from Nizhniy Novgorod, Russia, has started his career in 2009 being inspired by all Drum and Bass music that he could get his hands on</p>
+ <p class="text">Two years later he was discovered by the host of the famous Neuropunk podcast, DJ Bes, and after that he was introduced to the wide audience for the first time with his track "Blood Line", and started publishing at Tamrecords label.</p>
+ <p class="text">In the same year, Mizo released an EP named "Without the Sun EP" on Ammunition records label, and shortly after, another EP named "Confusion EP" on Deepah Beatz. Also in 2013, he released several singles on Tamrecords, such as "Eclipse" and "Hypersensibility". In 2014, Mizo joined Menfort and Bes to found the Gydra project, starting a completely new stage in his life.</p>
+ <p class="text">In a short time, the project reached wide popularity, and had releases on many big labels (Bad taste, Eatbrain, Cause 4 Concern, Ayra, BlackOut) and also has performed in various European clubs and in front of thousands of Russian crowds.</p>
+ <p class="text">In 2017, Alex left Gydra, opening a new chapter by starting a solo career.</p>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<a href="kép4.html"><img class="image" src="kép4.jpg" alt="Alexey Maslyukov (Mizo)" > </img></a>
+ </div>
+ </div>
+
+<footer class="light">
+
+<p class="links">
+<br>
+<i class="fa fa-facebook-square"></i> 
+<a href="https://www.facebook.com/mizodnb/" target="_blank" > https://www.facebook.com/mizodnb/</a> 
+</br>
+<i class="fa fa-instagram"></i> 
+<a href="https://www.instagram.com/alex_mizo/" target="_blank" > https://www.instagram.com/alex_mizo/</a> 
+
+</p>
+
+ </footer>
+
+</body>
+</html>

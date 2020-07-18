@@ -1,0 +1,110 @@
+
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif, arial;
+}
+
+
+
+body{
+background-color: #373737;
+font-family: Verdana, Arial, Helvetica,courier-new ;
+    font-size: 13px;
+    color:#000000
+
+}
+p {
+    padding: 10px;
+}
+
+img.image{
+width:100%;
+height:auto;
+
+margin-top:3%;
+
+}
+
+
+.container{
+margin: 10px;
+margin-right:10px;
+}
+
+.text{
+position:relative;
+width: 100%;
+height: auto;
+margin: 10px;
+font-size:100%
+}
+.row{
+padding-top:50px;
+}
+
+.fa{
+display:relative;
+font-size:36px;
+color: black;
+padding:5px;
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+  color:black;
+  background-color:lightgray;
+}
+
+table, td, th {  
+  border: 1px solid white;
+  text-align: left;
+}
+
+table {
+  margin:20px;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th, td {
+padding: 15px;
+}
+
+  details {
+
+  text-align: center;
+  
+}
+.cap{
+	text-align:center;
+}
+
+.question{
+	display:relative;
+	margin:3%;
+	width:80%;
+	height:300px;
+	margin-top:3px;
+}
+.row{
+ margin-top:3px;	
+}
+
+p.myform{
+padding:3px;
+}
+
+
+
+form {
+ padding:10px;
+}
+
+
+
+.caption{
+	text-align:center;
+}
